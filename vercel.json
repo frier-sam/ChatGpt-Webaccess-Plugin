@@ -1,0 +1,5 @@
+{
+    "builds": [{ "src": "api/proxy.js", "use": "@vercel/node" }],
+    "routes": [{ "src": "/api/proxy", "methods": ["GET"], "dest": "/api/proxy.js" }]
+  }
+  
