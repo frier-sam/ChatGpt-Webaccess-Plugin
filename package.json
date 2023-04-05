@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/frier-sam/jeez-headless-browser#readme",
   "dependencies": {
-    "express": "^4.18.2",
-    "playwright": "^1.32.2"
+    "express": "latest",
+    "playwright": "latest"
   }
 }
