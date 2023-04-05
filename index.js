@@ -41,7 +41,7 @@ app.get('/', async (req, res) => {
   const page = await browser.newPage();
 
   try {
-    await page.goto(url, { waitUntil: 'networkidle' });
+    await page.goto(url, { waitUntil: 'networkidle2' });
     const content = await page.content();
     res.send(content);
   } catch (error) {
