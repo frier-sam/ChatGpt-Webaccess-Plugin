@@ -1,24 +1,30 @@
 {
-  "name": "proxy-server",
+  "name": "jeez-headless-browser",
   "version": "1.0.0",
-  "description": "A simple headless proxy service",
+  "description": "a simple proxy server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm ci && npx playwright install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/frier-sam/jeez-headless-browser.git"
   },
   "author": "frier-sam",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/frier-sam/jeez-headless-browser/issues"
   },
   "homepage": "https://github.com/frier-sam/jeez-headless-browser#readme",
+  "engines": {
+    "node": "^14"
+  },
   "dependencies": {
-    "express": "^4.18.2",
-    "playwright": "^1.32.2"
+    "chrome-aws-lambda": "^6",
+    "express": "^4.18.1",
+    "puppeteer-core": "^6"
+  },
+  "devDependencies": {
+    "puppeteer": "^16.2.0"
   }
 }
