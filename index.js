@@ -37,11 +37,10 @@ app.get('/', async (req, res) => {
     };
   }
 
-  
+  const browser = await puppeteer.launch(options);
+  const page = await browser.newPage();
 
   try {
-    const browser = await puppeteer.launch(options);
-    const page = await browser.newPage();
     await page.goto(url, { waitUntil: 'networkidle' });
     const content = await page.content();
     res.send(content);
