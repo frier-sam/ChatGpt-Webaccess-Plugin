@@ -72,8 +72,8 @@ app.get('/.well-known/ai-plugin.json', async (req, res) => {
           "url": "http://localhost:3000/openapi.yaml",
           "is_user_authenticated": false
         },
-        "logo_url": "http://localhost:3333/logo.png",
-        "contact_email": "support@example.com",
+        "logo_url": "https://cdn-icons-png.flaticon.com/512/1011/1011322.png",
+        "contact_email": "shop2local@gmail.com",
         "legal_info_url": "http://www.example.com/legal"
       }
     return res.send(content);
