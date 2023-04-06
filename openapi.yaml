@@ -1,0 +1,25 @@
+openapi: 3.0.1
+info:
+  title: Updated Info Plugin
+  description: A plugin to get updated info of any url in world wide web. You can give a url and get the data in return
+  version: '0.2'
+servers:
+  - url: http://localhost:3000
+paths:
+  /:
+    get:
+      operationId: GetUpdatedinfo
+      summary: Get updated information of a url
+      description: Get updated information of a url
+      parameters:
+        - name: url
+          in: query
+          schema:
+            type: string
+          example: https%3A%2F%2Fgoogle.com
+      responses:
+        '200':
+          description: updated page data
+
+
+
